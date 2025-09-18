@@ -37,4 +37,5 @@ A Raspberry Pi–based home internet monitoring system using Squid Proxy (SSL Bu
      - **Alerts** – flagged websites (pornography, gambling, violence)  
      - **Devices** – connected device details  
      - **Logs** – browsing history records  
-## Screenshots 📷
+## System Flow 🏗️
+
