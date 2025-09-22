@@ -22,6 +22,7 @@ A Raspberry Pi–based home internet monitoring system using Squid Proxy (SSL Bu
 3. Keyword Classification
    - Traffic logs from monitored devices stored in `/var/log/squid/access.log`
    - URL extracted from log file to identify accessed websites
+   - Extracted URLs/Domains checked against KOMDIGI's TrustPositif blocklist, a list of restricted and harmful websites flagged by the Indonesian government
    - Text content from webpage extracted using Python library BeautifulSoup
    - Extracted text pre-processed using spaCy & Sastrawi
    - Cleaned & filtered text then classified into categories (Pornography, Online Gambling, Violence) based on keyword matching from a dictionary
