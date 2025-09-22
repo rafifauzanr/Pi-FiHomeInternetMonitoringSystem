@@ -39,4 +39,9 @@ A Raspberry Pi–based home internet monitoring system using Squid Proxy (SSL Bu
      - **Devices** – connected device details  
      - **Logs** – browsing history records  
 ## System Flow 🏗️
+The diagram below illustrates the overall workflow of the Pi-Fi Home Internet Monitoring System.
+It shows how traffic is intercepted via Squid Proxy (SSL Bump), analyzed using NLP (spaCy + Sastrawi), cross-checked with the TrustPositif blocklist, and finally logged or displayed through the Flask backend and Android client.
 
+<br>
+
+<img src = "images/System Flow.jpg">
