@@ -44,4 +44,4 @@ It shows how traffic is intercepted via Squid Proxy (SSL Bump), analyzed using N
 
 <br>
 
-<img src = "images/System Flow.png">
+<img src = "images/System Flow.png" width = 400>
