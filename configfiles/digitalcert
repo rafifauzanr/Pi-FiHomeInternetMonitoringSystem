@@ -1,0 +1,1 @@
+sudo openssl req -new -newkey rsa:2048 -sha256 -days 3650 -nodes -x509 \-keyout myCA.pem -out myCA.pem \-subj "/C=ID/ST=Jakarta/L=Jakarta/O=Internet Monitoring System/CN=Monitoring Root CA"
