@@ -1,0 +1,27 @@
+sudo mkdir -p /etc/squid/ssl_cert
+sudo bash -c 'cat > /etc/squid/ssl_cert/openssl.cnf << EOF
+[ req ]
+default_bits = 2048
+encrypt_key = no
+deafult_md = sha256
+prompt = no
+utf8 = yes
+distinguished_name = req_distinguished_name
+req_extensions = v3_req
+
+[ req_distingushed_name ]
+C = ID
+ST = Jakarta
+L = Jakarta
+O = Internet Monitoring System 
+CN = Monitoring Dynamic Certificate
+
+[ v3_req ]
+basicConstraints = CA:FALSE
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+extendedKeyUsage = serverAuth
+subjectAltName = @alt_names
+
+[ alt_names ] 
+DNS.1 = \SENV:SQUID_CERT_DOMAIN
+EOF'
