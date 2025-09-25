@@ -1,0 +1,4 @@
+IP,First Connected,Last Connected,Duration (Sekon),Request Count,Domains Visited,Status,Device Name
+192.168.4.10,2025-07-13 21:04:14,2025-07-13 21:07:15,180.84,2,"apple, reddit",active,Device-192.168.4.10
+192.168.4.92,2025-07-04 19:17:09,2025-07-04 19:44:53,1663.63,58,"richaudience, openx, dtscout, uncn, superlive, surveyjs, primis, media, ipredictive, facebook, adsmoloco, gsspat, simpli, wikimedia, teads, cekartinama, detik, googleadservices, ctnsnet, unrulymedia, ampproject, youtube, google, inmobi, kgdata, fimela, tribalfusion, onetag-sys, kgnow, yahoo, company-target, histats, orami, wikipedia, pubmatic, kompas",active,Oppo Reno 4
+192.168.4.95,2025-07-13 20:50:55,2025-07-13 20:50:55,0.0,1,catrescue,active,Device-192.168.4.95
