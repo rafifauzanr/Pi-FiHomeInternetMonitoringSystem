@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingBottom="80dp"
+    tools:context=".AlertsFragment">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🚩 Alerts"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Summary Section -->
+    <TextView
+        android:id="@+id/summary_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box_outline_blue"
+        android:fontFamily="monospace"
+        android:padding="12dp"
+        android:text="Loading alerts summary..."
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <!-- Alerts ScrollView -->
+    <ScrollView
+        android:id="@+id/alerts_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/box_outline_blue"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/alerts_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Loading alerts..."
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textIsSelectable="true" />
+
+    </ScrollView>
+
+</LinearLayout>

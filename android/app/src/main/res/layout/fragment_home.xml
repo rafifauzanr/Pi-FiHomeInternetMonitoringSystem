@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:background="@drawable/header_bg"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome!"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/xml_text_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/xml_text_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <!-- Devices Connected -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_margin="45dp"
+            android:background="@drawable/box_outline_blue">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/baseline_devices_24"
+                android:contentDescription="Devices icon"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/devices_connected_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Devices Connected: --"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <!-- Total Alerts -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_margin="45dp"
+            android:background="@drawable/box_outline_blue">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/outline_catching_pokemon_24"
+                android:contentDescription="Alerts icon"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/total_alerts_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Alerts: --"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <!-- Connection Time -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_margin="45dp"
+            android:background="@drawable/box_outline_blue">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/timer"
+                android:contentDescription="Connection time icon"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/connection_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connection Time: --"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

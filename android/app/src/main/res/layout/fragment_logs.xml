@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".LogsFragment">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📋 Web Activity Logs"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Summary Section -->
+    <TextView
+        android:id="@+id/summary_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loading summary..."
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/box_outline_blue"
+        android:padding="12dp"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Logs ScrollView -->
+    <ScrollView
+        android:id="@+id/logs_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/box_outline_blue"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/logs_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading logs..."
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="monospace"
+            android:padding="8dp"
+            android:lineSpacingExtra="2dp" />
+
+    </ScrollView>
+
+    <!-- Auto-refresh indicator -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔄 Auto-refresh every 3 seconds"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center"
+        android:paddingTop="8dp" />
+
+</LinearLayout>
